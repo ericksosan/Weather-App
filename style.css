@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
@@ -13,16 +12,17 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-color: #35aadf;
+	background-color: rgb(245, 245, 245);
 	overflow: hidden;
+	flex-direction: column;
 }
 
 .card-search {
-	width: 350px;
-	height: 250px;
+	width: 400px;
+	height: 300px;
 	background-color: #fff;
 	border-radius: 0.4rem;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 
 	display: flex;
 	align-items: center;
@@ -112,13 +112,13 @@ body {
 	color: #fff;
 	font-size: 1rem;
 	font-weight: 600;
-    transition: .8s ease;
-	transform: translateY(-40px);
+	transition: 0.8s ease;
+	transform: translateY(-20px);
 }
 
 .search-city:hover {
 	box-shadow: inset -20rem 0 royalblue;
-    transition: 1.2s ease;
+	transition: 1.2s ease;
 }
 
 .activeSearch {
@@ -126,11 +126,16 @@ body {
 }
 
 .search-city i {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.2rem;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 1.2rem;
 }
 
-.hidden-card-search{
-    transform: translateX(-1000px);
+.hidden-card-search {
+	transform: translateX(-1000px);
 	opacity: 0;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
 }
