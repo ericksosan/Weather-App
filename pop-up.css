@@ -1,0 +1,68 @@
+
+.pop-up-card {
+	opacity: 0;
+	width: 22rem;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	margin: 0.5rem;
+	border-radius: 0.3rem;
+	font-weight: 500;
+	color: #fff;
+	transition: 1.5s ease;
+	overflow: hidden;
+	transform: translateX(400px);
+	z-index: 1000;
+}
+.pop-up {
+	font-size: 1.03rem;
+	user-select: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+}
+.icon-signal {
+	display: flex;
+	border-right: 2px solid rgba(255, 255, 255, 0.3);
+	padding: 0.5rem;
+}
+.icon-signal i {
+	font-size: 2rem;
+}
+
+.message {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.active-success .line-time,
+.active-error .line-time {
+	width: 100%;
+	height: 3px;
+	background-color: #ffffff;
+	animation: popUp 5s ease;
+}
+
+@keyframes popUp {
+	0% {
+		width: 100%;
+	}
+	100% {
+		width: 0%;
+	}
+}
+
+.active-error {
+	background-color: rgb(230, 66, 66);
+	opacity: 1;
+	transform: translateX(0px);
+}
+.active-success {
+	background-color: rgb(70, 227, 70);
+	opacity: 1;
+	transform: translateX(0px);
+}

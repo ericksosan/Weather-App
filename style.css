@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #35aadf;
+	overflow: hidden;
+}
+
+.card-search {
+	width: 350px;
+	height: 250px;
+	background-color: #fff;
+	border-radius: 0.4rem;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	transition: 1.5s ease;
+}
+
+.head-weather {
+	width: 100%;
+	padding: 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.262);
+	color: #35aadf;
+}
+
+.body-weather {
+	width: 100%;
+	height: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.body-weather input {
+	padding: 10px 60px;
+	text-align: center;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 0.3rem;
+	font-size: 1rem;
+	overflow: hidden;
+}
+
+.middle {
+	opacity: 1;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: all 1s ease;
+}
+
+.middle span {
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: 600;
+}
+
+.middle .line {
+	width: 50%;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.1);
+	margin: 0 2rem;
+}
+
+#getGeo {
+	margin-top: 10px;
+	padding: 10px 80px;
+	text-align: center;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 0.3rem;
+	cursor: pointer;
+	background-color: #35aadf;
+	color: #fff;
+	font-size: 1rem;
+	transition: all 1s ease;
+}
+
+.active,
+.activeSearch {
+	transform: translateY(100px);
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.search-city {
+	opacity: 1;
+	margin-top: 10px;
+	padding: 10px 80px;
+	text-align: center;
+	outline: none;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 0.3rem;
+	cursor: pointer;
+	background-color: rgba(66, 230, 66);
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 600;
+    transition: .8s ease;
+	transform: translateY(-40px);
+}
+
+.search-city:hover {
+	box-shadow: inset -20rem 0 royalblue;
+    transition: 1.2s ease;
+}
+
+.activeSearch {
+	transform: translateY(1000px);
+}
+
+.search-city i {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2rem;
+}
+
+.hidden-card-search{
+    transform: translateX(-1000px);
+	opacity: 0;
+}
