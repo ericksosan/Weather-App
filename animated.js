@@ -12,4 +12,3 @@ function goToData() {
 }
 
 btnSearchCity.addEventListener('click', goToData);
-

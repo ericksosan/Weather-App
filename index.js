@@ -18,7 +18,7 @@ cityName.addEventListener('keyup', () => {
 const API_KEY = 'd3a33df3c65b46289a310734221307';
 const getDataApi = async (query) => {
 	const res = await fetch(
-		`http://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${query}`,
+		`https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${query}`,
 		{
 			method: 'GET',
 			headers: {
